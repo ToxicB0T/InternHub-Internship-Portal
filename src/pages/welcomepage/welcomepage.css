@@ -1,0 +1,441 @@
+.nav{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 8vh;
+    padding: 1vw 2%;
+    margin: 0;
+    background-color: var(--primary-color);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: ". logo logo . nav nav nav nav nav nav";
+    font-family: var(--Montserrat-font);
+    color: var(--background-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.list .listNav > li {
+    max-width: 18%;
+    position: relative;
+}
+.list .listNav > li > a{
+    display: block;
+    position: relative;
+    color: var(--background-color);
+    transition: transform 0.3s ease;
+}
+.list .listNav > li > a::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--background-color);
+    visibility: hidden;
+}
+.list .listNav > li > a:hover{
+    transform: scale(1.2);
+}
+.list .listNav > li> a:hover::after {
+    visibility: visible;
+}
+.list .listNav li .signUp{
+    color: var(--accent-color);
+}
+
+.list .listNav li .signUp::after {
+    visibility: visible;
+    background-color: var(--accent-color);
+}
+
+
+.list{
+    width: 100%;
+    grid-area: nav;
+    font-weight: bolder;
+}
+
+.list ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* styling the first div */
+
+.firstBackground{
+    background-image: url(../../assets/background/backgroundWave1920_1080.png);
+    height: 90vh;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10vh 10rem 10rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    color: var(--background-color);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--Open-Sans-font);
+}
+
+.firstBackground .name{
+    color: var(--primary-color);
+    /* Create an outline */
+    text-shadow: -1.5px 1.5px 0 white,1.5px 1.5px 0 white,1.5px -1.5px 0 white,-1.5px -1.5px 0 white;
+
+    font-weight: 900;
+    font-size: 3rem;
+}
+.firstBackground h3{
+    margin-bottom: 3rem;
+}
+
+.projectDescription {
+    max-width: 90%;
+    min-height: 20vh;
+}
+
+.find {
+    width: 100%;
+    min-height: 40%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.find a{
+    width: 20%;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 20rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 0.2rem solid var(--background-color);
+}
+
+.find a:hover{
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    cursor: pointer;
+    box-shadow: 0rem 0rem 3rem white;
+}
+
+/* Styling secondBackground */
+
+.secondBackground{
+    background-image: linear-gradient(to top,#d4d2d2 0%,#d4d2d2 30%,var(--background-color) 70%,var(--background-color) 100%);
+    max-width: 100%;
+    min-height: 90vh;
+    box-sizing: border-box;
+    padding: 10vh 10rem 0rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.secondBackground h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+.missions{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.missions div{
+    border: 0.1rem solid var(--primary-color);
+    max-width: 40%;
+    min-height: 15rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+    transition: background-color 0.4s ease,color 0.4s ease;
+}
+.missions div::before{
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    translate: -50% 200%;
+    visibility: hidden;
+}
+.missions .purpose::before{
+    content: "Our Purpose";
+}
+.missions .commitment::before{
+    content: "Our Commitment";
+}
+
+.missions div:hover{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+.missions div:hover:before{
+    visibility: visible;
+}
+
+/* Styling third Background */
+
+.thirdBackground{
+    background-image: url(../../assets/background/backgroundImageInternships1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    min-height: 90vh;
+    padding: 2vh 10rem 0rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.thirdBackground h3{
+    font-size: 3rem;
+    color: white;
+    /* Create an outline */
+    text-shadow: -1.5px 1.5px 0 var(--primary-color),1.5px 1.5px 0 var(--primary-color),1.5px -1.5px 0 var(--primary-color),-1.5px -1.5px 0 var(--primary-color);
+    margin: 2rem 0rem 4rem 0rem;
+}
+
+.thirdBackground .serv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.thirdBackground .serv div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    min-height: 20rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+    padding: 2rem;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color 0.4s ease,color 0.4s ease;
+}
+
+.thirdBackground .serv div::before{
+    color: var(--primary-color);
+    /* Create an outline */
+    text-shadow: -1.5px 1.5px 0 white,1.5px 1.5px 0 white,1.5px -1.5px 0 white,-1.5px -1.5px 0 white;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% -60%;
+    width: fit-content;
+
+}
+
+.forStudent::before{
+    content: "For Students";
+}
+.forCompany::before{
+    content: "For Companies";
+}
+
+.thirdBackground .serv div:hover{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+.thirdBackground .serv div:hover:before{
+    background-color: transparent;
+    translate: -50% -130%;
+}
+
+
+/* Styling Contact US */
+
+.contactus{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(to bottom,#d4d2d2 0%,#d4d2d2 30%,var(--background-color) 70%,var(--background-color) 100%);
+}
+
+/* Styling fourth background */
+
+.fourthBackground{
+    background-image: url(../../assets/background/backgroundLayeredSteps1920_1080.png);
+    min-height: 90vh;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    color: var(--background-color);
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.fourthBackground > div{
+    font-family: var(--Montserrat-font);
+    margin-top: 40vh;
+    width: 30%;
+    height: 20rem;
+    padding: 2rem;
+}
+.fourthBackground h3:not(.logo){
+    margin-bottom: 2rem;
+    font-size: 30px;
+    font-family: var(--Montserrat-font);
+    letter-spacing: 0.2rem;
+    position: relative;
+}
+
+.fourthBackground h3:not(.logo)::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient(to right,var(--accent-color) 0 30% ,var(--background-color) 30% 100%);
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    border-radius: 5px;
+}
+.des{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.des p{
+    margin-bottom: 4vh;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.links ul li {
+    margin-bottom: 0.8rem;
+}
+.links ul li a{
+    text-decoration: none;
+    color: var(--background-color);
+    font-size: 1.2rem;
+}
+
+.social ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.social ul li a{
+    text-decoration: none;
+}
+
+.social ul li a i{
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--background-color);
+    border: 3px solid var(--background-color);
+    border-radius: 50%;
+}
+
+.social ul li a i::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    translate: -25% 250%;
+    color: var(--background-color);
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    visibility: hidden;
+}
+
+.social ul li a i:hover{
+    background-color: white;
+}
+.social ul li a i:hover::after{
+    visibility: visible;
+}
+
+.social ul li a .fa-facebook-f:hover{
+    color: #4267b2;
+}
+.social ul li a .fa-linkedin-in:hover{
+    color: #1da1f2;
+}
+.social ul li a .fa-x-twitter:hover{
+    color: var(--text-color);
+}
+.social ul li a .fa-square-instagram:hover{
+    color: #e1306c;
+}
+
+.social ul li a .fa-facebook-f::after{
+    content: "facebook";
+}
+.social ul li a .fa-linkedin-in::after{
+    content: "linkedin";
+}
+.social ul li a .fa-x-twitter::after{
+    content: "twitter";
+}
+.social ul li a .fa-square-instagram::after{
+    content: "instagram";
+}
+
+/* Styling footer */
+
+.footer{
+    width: 100%;
+    height: 8vh;
+    background-color: var(--primary-color);
+    font-family: var(--Montserrat-font);
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

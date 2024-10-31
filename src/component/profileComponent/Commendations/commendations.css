@@ -1,0 +1,32 @@
+.commendationsConainer{
+    width: 100%;
+    min-height: 40vh;
+    background-color: white;
+    box-shadow: var(--boxShadow);
+    margin-top: 2vh;
+    border-radius: 10px;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: var(--Montserrat-font);
+}
+
+.companyInfo{
+    display: flex;
+    align-items: center;
+
+}
+
+.commendationsConainer .companyInfo .companyPic{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+}
+
+.commendationsConainer .companyInfo .companyPic img{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    cursor: pointer;    
+}

@@ -1,0 +1,167 @@
+.home{
+    width: 100%;
+    height: 100%;
+    font-family: var(--Montserrat-font);
+}
+
+.homePage{
+    width: 100%;
+    min-height: 50vh;
+    margin: 0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: var(--boxShadow);
+    background-color: white;
+}
+
+.homePageHr{
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.homePagePrifileInfo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    font-weight: 600;
+}
+
+.homePagePrifileInfoPicture{
+    width: 9vh;
+    height: 9vh;
+    border-radius: 50%;
+}
+
+.homePagePrifileInfoPicture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.homePagePrifileInfoProfileName{
+    width: 70%;
+}
+
+.NavlinkHomePagePrifileInfoProfileName{
+    color: var(--primary-color);
+}
+
+.homePageDescription{
+    width: 100%;
+    min-height: 5vh;
+    padding: 1vh 1vw;
+}
+
+.homePagePicture{
+    width: 90%;
+    min-height: 2vh;
+}
+
+.homePagePicture img{
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.homePageReactInfo{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1vh 1vw;
+}
+
+.reactNumber{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.upvoteIcon{
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+.commentsNumber{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.commentsNumber:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.homePageReact{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.upvoteBtnDiv{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.commentBtnDiv{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upvoteBtn{
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.upvoteBtn:hover,
+.commentBtn:hover{
+    color: var(--primary-color);
+}
+
+.upvoteBtn:hover{
+    border: 2px solid var(--primary-color);
+}
+
+.commentBtn{
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}

@@ -1,0 +1,26 @@
+.logo{
+    height: 5vh;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo .logoLeftBar{
+    margin-right: 0.5rem;
+    width: 5px;
+    height: 100%;
+    border-radius: 5px;
+    height: 100%;
+    background-color: var(--accent-color);
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    letter-spacing: .1rem;
+}
+
+.logoName{
+    font-size: 1.5rem;
+}

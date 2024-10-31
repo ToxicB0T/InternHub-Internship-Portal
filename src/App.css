@@ -1,0 +1,240 @@
+/* Variables :  */
+
+:root{
+  /* colors */
+
+  --text-color: #050315;
+  --background-color: #fbfbfe;
+  --primary-color: #2f27ce;
+  --secondary-color: #dedcff;
+  --secondary-color-opacity: rgba(222, 220, 255,0.3);
+  --accent-color: #E9AA5C;
+
+  /* font :  */
+  --Montserrat-font :"Montserrat", sans-serif;
+  --Open-Sans-font :"Open Sans", sans-serif;
+
+  /* Box Shadow :  */
+
+  --boxShadow:0px 0px 28px 0px rgba(255,255,255,0.9); 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+main{
+  display: flex;
+  gap: 3%;
+  padding: 1vh 1vw 0 1vw;
+  background-color: #eee;
+}
+
+
+.leftside{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eee;
+  border-radius: 10px;
+  flex: 2.5;
+  width: 100%;
+  height: 90vh;
+  position: sticky;
+  top: 10vh;
+}
+
+.profileDetailsNameNavlink{
+  color: var(--primary-color);
+}
+
+.leftside .lestSideProfileInfo{
+  width: 100%;
+  height: 30%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: var(--boxShadow);
+}
+
+
+.leftside .lestSideProfileInfo .profileDetails{
+  padding: 1vh 1vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftside .lestSideProfileInfo .profileDetailsPicture{
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+}
+
+.leftside .lestSideProfileInfo .profileDetailsPicture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.leftside .lestSideProfileInfo .profileDetails .profileDetailsNameAndDetails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 55%;
+  padding: 1vh 0.5vw 1vh 0.5vw;
+}
+
+.profileDetailsNameAndDetails .profileDetailsName{
+  width: 100%;
+  height: 20%;
+  font-family: var(--Montserrat-font);
+  font-weight: 600;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profileDetailsNameAndDetails .profileDetailsInfo{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+
+.profileDetailsNameAndDetails .profileDetailsInfo .certificate,
+.profileDetailsNameAndDetails .profileDetailsInfo .project,
+.profileDetailsNameAndDetails .profileDetailsInfo .commendation{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  font-family: var(--Open-Sans-font);
+  font-size: 0.9rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.leftside .leftSideLinks{
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: var(--boxShadow);
+  
+}
+.leftside .leftSideLinks .leftSideLinksPosition{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: var(--Montserrat-font);
+  height: 15%;
+  border-radius: 10px;
+}
+
+
+.leftSideBarIconsPosition{
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+.leftSideLinksPosition:hover{
+  background-color: #eee;
+}
+
+.nbNotifications,
+.nbMessages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  right: 2rem;
+  color: var(--text-color);
+  font-family: var(--Montserrat-font);
+  font-weight: 500;
+  box-shadow: var(--boxShadow);
+  border-radius: 50%;
+}
+
+
+
+
+
+
+.box{
+  background-color: #eee;
+  border-radius: 10px;
+  flex: 5;
+  min-height: 90vh;
+}
+
+.rightside{
+  border-radius: 10px;
+  box-shadow: var(--boxShadow);
+  flex: 2.5;
+  padding: 1vh 0.5vw;
+  height: 90vh;
+  position: sticky;
+  top: 10vh;
+  background-color: white;
+  font-family: var(--Montserrat-font);
+}
+
+.rightside ul{
+  margin-top: 5rem;
+  list-style: none;
+  width: 100%;
+}
+
+.rightSideRecommendationBox{
+  margin-top: 1rem;
+  padding: 1vh 0.5vw;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  width: 100%;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.rightSideRecommendations{
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.rightSideRecommendations:hover{
+  text-decoration: underline;
+}
+
+.rightSideRecommendationBox:hover{
+  border: 1px solid var(--primary-color);
+}
